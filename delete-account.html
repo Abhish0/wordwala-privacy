@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Delete Your Word Wala Account</title>
+<meta name="description" content="Request deletion of your Word Wala account and associated data." />
+<style>
+  :root {
+    --bg: #f6f7fb;
+    --card: #ffffff;
+    --primary: #5C6BC0;
+    --primary-dark: #3F51B5;
+    --text: #1f2233;
+    --muted: #5a6079;
+    --danger: #c62828;
+    --border: #e3e6ee;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  header .badge {
+    display: inline-block;
+    background: var(--primary);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-bottom: 14px;
+  }
+  h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+  }
+  .lead {
+    color: var(--muted);
+    margin: 0;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(20, 24, 50, 0.04);
+  }
+  .card h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: var(--primary-dark);
+  }
+  .card ul {
+    margin: 8px 0 0;
+    padding-left: 20px;
+  }
+  .card ul li { margin-bottom: 6px; }
+  .in-app {
+    background: #eef0fb;
+    border-color: #d6daf3;
+  }
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    margin-top: 14px;
+    font-size: 14px;
+  }
+  label .req { color: var(--danger); }
+  input[type="email"],
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    background: #fff;
+    transition: border-color 0.15s;
+  }
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+  }
+  textarea { min-height: 90px; resize: vertical; }
+  .checkbox-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 18px;
+  }
+  .checkbox-row input { margin-top: 4px; }
+  .checkbox-row label {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  button {
+    margin-top: 22px;
+    width: 100%;
+    background: var(--danger);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  button:hover { background: #a31f1f; }
+  button:disabled { background: #c9a3a3; cursor: not-allowed; }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 28px;
+  }
+  footer a { color: var(--primary-dark); }
+  .helper {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+  /* Honeypot field hidden from real users */
+  .hp { display: none; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="badge">Word Wala</div>
+      <h1>Delete your account</h1>
+      <p class="lead">Request permanent deletion of your account and game data.</p>
+    </header>
+
+    <div class="card in-app">
+      <h2>Fastest way: delete from inside the app</h2>
+      <p style="margin:8px 0 0;">
+        Open Word Wala, go to <strong>Settings &rarr; Delete Account</strong>, and
+        confirm. Your account is removed immediately and you do not need to use
+        this form.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>What will be deleted</h2>
+      <ul>
+        <li>Your account (email and sign-in credentials)</li>
+        <li>Your profile (username and avatar)</li>
+        <li>Your saved words and word history</li>
+        <li>Your participation in past online games (your player slot is anonymised so opponents&rsquo; games remain viewable)</li>
+      </ul>
+      <h2 style="margin-top:18px;">What may be retained</h2>
+      <ul>
+        <li>Anonymised, aggregated game records that cannot identify you</li>
+        <li>Records we are legally required to retain (typically none for this app)</li>
+      </ul>
+      <p class="helper" style="margin-top:12px;">
+        Requests submitted through this form are processed manually within
+        <strong>30 days</strong>. You will receive a confirmation email when
+        deletion is complete.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Request deletion</h2>
+      <p class="helper">
+        Use this form only if you cannot access the app. Submit the email address
+        you used to sign up so we can verify and locate your account.
+      </p>
+
+      <form action="https://formsubmit.co/wordwala.app@gmail.com" method="POST">
+        <!-- FormSubmit config -->
+        <input type="hidden" name="_subject" value="Word Wala — Account Deletion Request" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="true" />
+        <input type="hidden" name="_next" value="https://abhish0.github.io/wordwala-privacy/delete-account-submitted.html" />
+        <!-- Honeypot: real users won't fill this; bots will -->
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" />
+
+        <label for="email">Account email <span class="req">*</span></label>
+        <input id="email" type="email" name="email" required placeholder="you@example.com" />
+        <div class="helper">The email you used to sign in to Word Wala.</div>
+
+        <label for="username">Username (optional)</label>
+        <input id="username" type="text" name="username" placeholder="Your in-app username" />
+
+        <label for="reason">Reason (optional)</label>
+        <textarea id="reason" name="reason" placeholder="Tell us why you're leaving — feedback helps us improve."></textarea>
+
+        <div class="checkbox-row">
+          <input id="confirm" type="checkbox" name="confirm" required />
+          <label for="confirm">
+            I understand that account deletion is <strong>permanent</strong> and
+            cannot be undone. My profile, saved words, and game history will be
+            removed.
+          </label>
+        </div>
+
+        <button type="submit">Submit deletion request</button>
+      </form>
+    </div>
+
+    <footer>
+      Questions? Contact
+      <a href="mailto:wordwala.app@gmail.com">wordwala.app@gmail.com</a>
+      &middot;
+      <a href="privacy_policy.html">Privacy Policy</a>
+    </footer>
+  </div>
+</body>
+</html>
